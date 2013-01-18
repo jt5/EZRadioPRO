@@ -103,9 +103,9 @@ void SI4431Class::Init(u8 TXPower)
       EZ_RSTATUS(ItStatus1, ItStatus2)  
       //print_P(PSTR("\r\nRadio is ready"));     		      
       /*Установка параметров согласно расчету в xls листе от производителя Si4431*/
-      //Установка несущей частоты 868.3 MHz
+      //Установка несущей частоты 868.7 MHz
       EZ_WR(0x75, 0x73)
-      EZ_WR(0x76, 0x67)
+      EZ_WR(0x76, 0x6C)
       EZ_WR(0x77, 0xC0)
       //Скорость передачи данных (9.6kbps)
       EZ_WR(0x6E, 0x4E)
